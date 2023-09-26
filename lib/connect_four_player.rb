@@ -11,6 +11,8 @@ class Players
     puts "Player 2, enter your name:"
     player2_name = gets.chomp
     @player_names = { player1_name => 'X', player2_name => 'O'}
-    puts "\n#{player1_name} will be X and #{player2_name} will be O"
+    puts "\n#{player1_name} will be #{@player_names[player1_name]} and #{player2_name} will be #{@player_names[player2_name]}"
   end
 end
+
+# 🔴⚫
