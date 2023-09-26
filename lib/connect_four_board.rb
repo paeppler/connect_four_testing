@@ -77,8 +77,7 @@ class Board
   def place_symbol(column)
     (0..7).each do |i|
       if @board[(i * 7) + column] == ' '
-        bb = @players.player_names[@current_player]
-        @board[(i * 7) + column]  = bb
+        @board[(i * 7) + column]  = @players.player_names[@current_player]
         break
       end
     end

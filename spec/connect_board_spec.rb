@@ -28,9 +28,6 @@ describe Board do
       expect(board.instance_variable_get(:@current_player)).to eq('Player1')
     end
   end
-
-  describe '#play_turn' do
-  end
   
   describe '#place_symbol' do    
     xit 'writes X to correct board position' do
@@ -39,8 +36,7 @@ describe Board do
       board.place_symbol(1)
       board_arr = board.instance_variable_get(:@board)
       expect(board_arr[1]).to eq('X')
-    end
-    
+    end    
   end
 
   describe '#switch_player' do
@@ -51,6 +47,5 @@ describe Board do
       expect(board.instance_variable_get(:@current_player)).to eq('Player2')
     end
   end
-
 end
 
